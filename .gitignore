@@ -2,7 +2,6 @@
 *.log
 *.lnk
 node_modules
-package-lock.json
 DeviceAuthGenerator.exe
 deviceAuths.json
 history.json
