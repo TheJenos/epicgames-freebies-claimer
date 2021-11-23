@@ -122,6 +122,7 @@ function sleep(delay) {
                     } else {
                         Logger.warn(`${offer.title} was already claimed for this account`);
                     }
+                    newlyClaimedPromos.push(offer);
                     // Also remember already claimed offers
                     offer.date = Date.now();
                     claimedPromos.push(offer);
