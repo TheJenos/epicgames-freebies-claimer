@@ -15,7 +15,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: cstuder/apprise-ga@master
+    - name: Apprise Notification
+      uses: cstuder/apprise-ga@master
       with: 
         title: "Daily Claimer"
         message: "Daily Claimer Started"
