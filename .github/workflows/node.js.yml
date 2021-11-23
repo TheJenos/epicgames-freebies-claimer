@@ -15,11 +15,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: cstuder/apprise-ga@master
+      with: 
+        title: "Daily Claimer"
+        message: "Daily Claimer Started"
+    - env:
+        APPRISE_URL: "discord://912724660637036544/FdldTT8aJRN-Zv_bQq_Y0pivIqShDPEgDIs0q59qpBPzFLhVQobwA8aBXoeptqgxSQcA"
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: pip install apprise
     - run: npm install
     - run: npm start
