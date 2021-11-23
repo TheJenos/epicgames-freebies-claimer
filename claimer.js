@@ -118,10 +118,10 @@ function sleep(delay) {
                     let purchased = await client.purchase(offer, 1);
                     if (purchased) {
                         Logger.info(`Successfully claimed ${offer.title} (${purchased})`);
-                        newlyClaimedPromos.push(offer.title);
                     } else {
                         Logger.warn(`${offer.title} was already claimed for this account`);
                     }
+                    newlyClaimedPromos.push(offer);
                     // Also remember already claimed offers
                     offer.date = Date.now();
                     claimedPromos.push(offer);
