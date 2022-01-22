@@ -49,7 +49,7 @@
     "homepage": "https://github.com/revadike/epicgames-freebies-claimer",
     "url": "https://github.com/revadike/epicgames-freebies-claimer",
     "devDependencies": {
-        "@babel/core": "latest",
+        "@babel/core": "^7.16.10",
         "@babel/eslint-parser": "latest",
         "chai": "*",
         "eslint": "latest",
@@ -57,7 +57,7 @@
     },
     "dependencies": {
         "colors": "1.4.0",
-        "epicgames-client": "Revadike/node-epicgames-client#develop",
+        "epicgames-client": "github:Revadike/node-epicgames-client#develop",
         "tracer": "^1.0.3"
     }
 }
